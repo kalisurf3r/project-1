@@ -1,0 +1,8 @@
+.stockImg {
+    width: 25%;
+    height: 25%;
+    display: flex;
+    position: relative;
+    left: 100px;
+    flex-shrink: 1;
+}

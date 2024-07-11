@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>News</title>
+    <title>Stocks</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
     <!-- Dropdown Structure -->
@@ -32,7 +33,19 @@
       </div>
     </nav>
 
-    <main class="container" style="min-height: 500px"></main>
+    <main class="container" style="min-height: 500px">
+      <div class="row">
+        <div class="input-field col s6">
+          <input value="AAPL" id="first_name2" type="text" class="validate search">
+          <label class="active" for="first_name2">Search Stock</label>
+          <p>*Enter a ticker name to see the latest news of the stock.</p>
+          <div  id="error-message" style="color: red; display: none;"></div>
+        </div>
+        <img src="../assets/stock.JPG" alt="" class="stockImg">
+      </div>
+      <a class="waves-effect waves-light btn view">View</a>
+      <div class="stockContainer"></div>
+    </main>
 
     <footer class="page-footer">
       <div class="container flex">
