@@ -16,46 +16,111 @@
   </head>
   <body>
     <!-- Dropdown Structure -->
-    <ul id="dropdown1" class="dropdown-content">
+    <ul id="dropdown1" class="dropdown-content ">
       <li><a href="../index2.html">Home</a></li>
       <li><a href="./news.html">News</a></li>
     </ul>
     <nav>
       <div class="nav-wrapper">
-        <a href="#!" class="brand-logo center">Stocks</a>
+        <a href="#" class="brand-logo center">Stocks</a>
         <ul class="left">
           <!-- Dropdown Trigger -->
           <li>
             <a class="dropdown-trigger" href="#!" data-target="dropdown1"
-              ><i class="material-icons right">apps</i></a>
+              ><i class="material-icons right">apps</i></a
+            >
           </li>
         </ul>
       </div>
     </nav>
 
+    <!-- the user search input with error message -->
     <main class="container" style="min-height: 800px">
       <div class="row">
         <div class="input-field col s6">
-          <input value="AAPL" id="first_name2" type="text" class="validate search">
+          <input
+            value="AAPL"
+            id="first_name2"
+            type="text"
+            class="validate search"
+          />
           <label class="active" for="first_name2">Search Stock</label>
           <p>*Enter a ticker name to see the latest news of the stock.</p>
-          <div  id="error-message" style="color: red; display: none;"></div>
+          <div id="error-message" style="color: red; display: none"></div>
+          <a class="waves-effect waves-light btn tooltipped view pulse" data-position="bottom" data-tooltip="No # in Ticker">View</a>
         </div>
-        <img src="../assets/stock.JPG" alt="" class="stockImg">
+        
+        <!-- the img carousel -->
+        <div class="carousel-container">
+        <div class="carousel">
+          <a class="carousel-item" href="#one!"><img src="../assets/stock.JPG"></a>
+          <a class="carousel-item" href="#two!"><img src="../assets/stock2.JPG"></a>
+          <a class="carousel-item" href="#three!"><img src="../assets/stock3.JPG"></a>
+        </div>
       </div>
-      <a class="waves-effect waves-light btn view">View</a>
+     
+      </div>
+      
+     <!-- load wheel -->
+      <div class="load-container">
+      <div class="preloader-wrapper small active">
+        <div class="spinner-layer spinner-blue">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+  
+        <div class="spinner-layer spinner-red">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+  
+        <div class="spinner-layer spinner-yellow">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+  
+        <div class="spinner-layer spinner-green">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- where cards will be appended -->
       <div class="stockContainer"></div>
     </main>
 
+    <!-- footer with back to top button -->
     <footer class="page-footer">
       <div class="container flex">
         <div class="row">
           <div class="col s12 center-align">
-            <i class="material-icons center">arrow_drop_up</i>
+           <a href="" class="btn center backTop"> <i class="material-icons center">arrow_drop_up</i>Back to Top</a>
           </div>
         </div>
       </div>
     </footer>
+    
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
