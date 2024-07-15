@@ -1,55 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <h1 style="color: #00695c;text-align:center;">This is a heading</h1>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
     <!-- Dropdown Structure -->
     <ul id="dropdown1" class="dropdown-content">
-      <li><a href="../index2.html">Home</a></li>
-      <li><a href="./stocks.html">Stocks</a></li>
+        <li><a href="../index2.html">Home</a></li>
+        <li><a href="./stocks.html">Stocks</a></li>
     </ul>
     <nav>
-      <div class="nav-wrapper">
-        <a href="#!" class="brand-logo center">News</a>
-        <ul class="left">
-          <!-- Dropdown Trigger -->
-          <li>
-            <a class="dropdown-trigger" href="#!" data-target="dropdown1"
-              ><i class="material-icons right">apps</i></a>
-          </li>
-        </ul>
-      </div>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo center">News</a>
+            <ul class="left">
+                <!-- Dropdown Trigger -->
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">
+                    <i class="material-icons right">apps</i>
+                </a></li>
+            </ul>
+        </div>
     </nav>
 
-    <main class="container" style="min-height: 500px"></main>
+    <!-- Main container for news display and search -->
+    <main class="container" style="min-height: 500px">
+        <div class="row">
+            <div class="input-field col s12">
+                <input value="Apple Inc" id="search_field" type="text" class="validate search">
+                <label class="active" for="search_field">Search News Article</label>
+                <p>*Enter keyword(s) to look up news articles.</p>
+            </div>
+            <button class="waves-effect waves-light btn view">View</button>
+        </div>
+        <div class="news-container"></div> <!-- Container where news will be injected -->
+    </main>
 
     <footer class="page-footer">
-      <div class="container flex">
-        <div class="row">
-          <div class="col s12 center-align">
-            <i class="material-icons center">arrow_drop_up</i>
-          </div>
+        <div class="container flex">
+            <div class="row">
+                <div class="col s12 center-align">
+                    <i class="material-icons center">arrow_drop_up</i>
+                </div>
+            </div>
         </div>
-      </div>
     </footer>
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="../js/news.js"></script>
-  </body>
+</body>
 </html>
