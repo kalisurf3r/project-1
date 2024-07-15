@@ -8,6 +8,8 @@ $(document).ready(function(){
   $('.carousel').carousel();
 });
 
+
+
 $(document).ready(function(){
   $('.tooltipped').tooltip();
 });
@@ -84,6 +86,7 @@ function displayNews(data) {
     cardDiv.style.display = "flex";
     cardDiv.style.flexDirection = "column";
     cardDiv.style.alignItems = "center";
+    
 
     // title
     const newsTitle = document.createElement("h6");
@@ -122,5 +125,6 @@ function topFunction(event) {
     behavior: 'smooth' 
   });
 }
+
 
 backTopBtn.addEventListener("click", topFunction);
