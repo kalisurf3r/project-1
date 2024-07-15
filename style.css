@@ -5,4 +5,47 @@
     position: relative;
     left: 100px;
     flex-shrink: 1;
+
 }
+.nav-wrapper {
+    background-color: #00695c;
+
+}
+
+.page-footer {
+    background-color: #00695c;
+
+}
+
+.btn {
+    background-color: #004d40;
+
+}
+
+title {
+    display: none;
+}
+
+.container {
+    background-color: #78909c;
+
+}
+
+.col.s12.center-align {
+    background-color: #00695c;
+
+}
+
+body {
+    background-color: #78909c;
+
+}
+
+h1 {
+    display: none;
+    
+}
+
+
+
+
