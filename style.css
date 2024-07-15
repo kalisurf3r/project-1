@@ -5,6 +5,52 @@
     position: relative;
     left: 100px;
     flex-shrink: 1;
+<<<<<<< HEAD
+
+}
+.nav-wrapper {
+    background-color: #00695c;
+
+}
+
+.page-footer {
+    background-color: #00695c;
+
+}
+
+.btn {
+    background-color: #004d40;
+
+}
+
+title {
+    display: none;
+}
+
+.container {
+    background-color: #78909c;
+
+}
+
+.col.s12.center-align {
+    background-color: #00695c;
+
+}
+
+body {
+    background-color: #78909c;
+
+}
+
+h1 {
+    display: none;
+    
+}
+
+
+
+
+=======
 }
 
 .carousel-container {
@@ -25,3 +71,4 @@
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     transform: scale(1.05);
   }
+>>>>>>> dev
